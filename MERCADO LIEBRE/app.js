@@ -3,8 +3,8 @@ const app = express();
 
 const path = require('path');
 
-const port = process.PORT || 3001;
-app.listen(port, () => console.log('Servidor corriendo en el puerto ${port}'))
+const port = process.env.PORT || 3001;
+app.listen(port, () => console.log(`Servidor corriendo en el puerto ${port}`))
 
 /* const PORT = 3050; */
 
