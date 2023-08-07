@@ -1,0 +1,470 @@
+/* *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+
+}
+h2{
+    font-size: 24px;
+}
+
+p{
+    font-size: 12px;
+}
+div.top-header{
+    padding: 5%;
+   
+}
+header {
+    background-color: #EAC926;
+
+}
+
+header div.logo{
+    width: 50%;
+}
+
+header div.logo{
+    padding: 10px;
+}
+header nav{
+    font-size: 12px;
+    padding-left: 20px;
+}
+
+header ul li{
+    list-style-type: none;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
+header .form .input{
+    background-color: #FFF;
+    border: 1px solid #000;
+    outline: none;
+    color: #666;
+    padding: 2px;
+}
+header .form .submit{
+    background-color: #FFF;
+    border: 1px solid #000;
+    color: #666;
+    width: 10%;
+}
+
+header div.top-header p{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.burger-container {
+    
+    background-color: #176bc5;;    
+}
+
+.burger {
+    text-align: center;
+    background-color: #176bc5;
+    
+}
+article div.main-article{
+    width: 100%;
+}
+
+.price{
+    font-size: 18px;
+}
+
+.discount,
+.description{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+h3,
+.description{
+    color: #666;
+}
+
+section.banner img{
+    width: 100%;
+}
+
+main{
+    width: 90%;
+    margin: auto;
+}
+
+
+main section article{
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+main section article img{
+    width: 100%;
+}
+
+main section article i,
+.discount{
+    color: #39b54a;
+}
+
+main section article i{
+    display: inline;
+    padding: 6px;
+    border-radius: 50%;
+    border: solid 1px #ebebeb
+}
+
+main section article{
+    padding: 20px 0 10px 0;
+    border-top: solid 1px #ebebeb;
+}
+.main-article{
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+}
+
+@media (min-width: 361px) {
+    header{
+        background-color: #EAC926;
+        height: 320px;
+    }
+    main section article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+}
+
+@media (min-width: 769px){
+    header{
+        background-color: #EAC926;
+        height: 40%;
+        margin: 0;
+        padding-bottom: 1px;
+    }
+    .burger{
+        display: none;
+    }
+    header nav {
+        display: inline;
+    }
+}
+    
+ */
+
+ *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+header{
+    background-color: #EAC926;
+    width: 100vw;
+    height: auto;
+    padding-bottom: 10px;
+}
+body{
+    font-size: 12px;
+    font-family: 'roboto', sans-serif;
+    background-color: #ebebeb;
+}
+.titulares{
+    font-size: 24px;
+}
+.precio{
+    width: 30vw;
+    font-size: 18px;
+    color: #39b54a;
+}
+.descuento{
+    flex-wrap: wrap;
+    width: 70vw;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.descripcion{
+    font-size: 16px;
+    color: #666;
+    display:none;
+}
+article:hover .descripcion{
+    display: block;
+}
+.cuotas-tc{
+    text-align: center;
+    font-weight: bold;
+}
+.burger-menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2em;
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    margin: 0px auto;
+    background-color: #1259c3;
+    margin-top: -5px;
+
+}
+
+footer {
+    text-align: center;
+    color: #666;
+}
+footer section i {
+    color: #1259c3;
+    font-size: 2em;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+header nav ul{
+    list-style-type: none;
+}
+header nav ul li a{ 
+    text-decoration: none;
+    color: black;
+    display: none;
+}
+.form{
+    display: flex;
+    font-size: 11px;
+    align-items: center;
+    width: 48%;
+    position: relative;
+}
+
+header .input{
+    color: #666;
+    background-color: white;
+    border: solid 1px #EAC926;
+    border-radius: 5px;
+    width: 80%;
+    margin-right: 2px;
+    padding: 5%;
+}
+header .submit{
+    /*background-color: white;*/
+    /*border: solid 1px #666;*/
+    /*width: 5%;*/
+    color: #666;
+    padding: 1%;
+    position:absolute;
+    right: 25%;
+    font-size: 2em;
+
+}
+main{
+    text-align: center;
+    width: 90%;
+    margin: 0px auto;
+}
+section img{
+    width: 100vw;
+}
+main section article img{
+    width: 100%;
+}
+article{
+    margin-bottom: 10px;
+    background-color: #fff;
+
+}
+.detalle{
+    border-top: solid 1px #ebebeb;
+    padding: 15px;
+    text-align: left;
+    position: relative;
+}
+article .detalle i{
+    color: #39b54a;
+    font-size: 16px;
+    border-radius: 50%;
+    border-color:#39b54a;
+    border-style: solid;
+    padding: 5px;
+    border-width: 1px;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+
+}
+.logo{
+    width: 48%;
+}
+.preciodescuento{
+    display:flex;
+}
+.header-tablet{
+    display:flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    justify-content: space-around;
+}
+.reg{
+    background-color: #ebebeb;
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+    margin: auto;
+    padding: 20px 0;
+}
+.register{
+    width: 80%;
+    padding: 5px;
+    text-align: left;
+    margin-bottom: 30px;
+    border-radius: 7px;
+    border: solid 1px #ebebeb;
+}
+.radio{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+
+}
+.radio-1{
+    margin: 0 25px;
+}
+.radio-2{
+    margin-left: 25px;
+}
+.check{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+.check-2{
+    margin:5px 15px 5px 0px;
+}
+.boton{
+    background-color: #1259c3;
+    color: white;
+    width: 70%;
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 15px;
+    border-radius: 7px;
+    border: solid 1px #1259c3;
+}
+.ingreso{
+    background-color: #1259c3;
+    color: white;
+    width: 80%;
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 15px;
+    border-radius: 7px;
+    border: solid 1px #1259c3;   
+}
+.ingreso:hover{
+    background-color: #0022AA;
+    transition: 0.5s;
+}
+header nav ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+header nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.nav-izq{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 3%;
+}
+.nav-der{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin-right: 3%;
+}
+article:hover{
+    box-shadow: 0px 0px 10px rgb(100,100,100); 
+}
+article i{
+    transition: transform 1s;
+}
+article:hover i{
+    transform: rotate(-90deg);
+}
+
+footer section i{
+    transition: transform 0.5s;
+}
+footer section i:hover{
+    transform: rotate(360deg);
+    color: #39b54a;
+}
+@media(min-width: 481px){
+  /*.descripcion{
+      display: block;
+    }*/
+  header nav ul li a{
+      display:flex;
+      flex-wrap: wrap;
+  }
+  header nav ul li{
+      margin: 0 5px;
+  }
+
+  .burger-menu{
+      display: none;
+      width: auto;
+  }
+  main section div{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+  }
+  article{
+        width: 48%; 
+  }
+  .header-tablet{
+      display: flex;
+      flex-wrap: wrap;
+  }
+  .logo ,
+  .form ,
+  .cuotas-tc{
+      width: 32%;
+  }
+  .cuotas-tc{
+      display: flex;
+      align-items: center;
+      padding: 3%;
+    }
+}
+@media(min-width: 769px){
+    main section div{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    article{
+        width: 23%;
+    }
+    .footer-3 {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 15px 0;
+    }
+    footer section{
+        width: 32%;
+        justify-content: space-between;
+    }
+}
