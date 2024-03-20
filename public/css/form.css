@@ -65,85 +65,52 @@ header {
     font-size: 13px;
 }
 
+/* main */
 
-/* Main */
-main {
-    /* width: 90%; */
+.formulario {
+    padding: 15px;
+}
+.campo-form, .campo-form2 , .campo-form3 , .campo-form4 , .campo-form5 {
+    width: 80%; 
     margin: auto;
+    margin-bottom: 15px;
 }
 
-.secciones {
-    background-color: #ebebeb;
-    width: 80%;
-    margin: auto;
+.campo-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+.campo-form input , .campo-form5 input {
     padding: 5px;
-}
-.Titulares{
-font-family: 'Roboto', sans-serif;
-font-size: 24px;
-text-align: center;
-}
-
-.secciones article {
-    position: relative;
-    margin-bottom: 10px;
-    background-color: #fff;
-    transition: all 500ms linear;
-}
-.secciones article:hover {
-    color: #EAC926;
-    box-shadow: 0px 0px 10px rgb(100,100,100);
-}
-
-.article-date{
-    border-top: 1px solid #9b9b9b60;
-    padding: 10px;
-}
-.article-date i{
-    bottom: 55px;
-    right: 10px;
-    position: absolute;
-    padding: 5px;
-    border-radius: 100%;
-    border: solid 1px #39b54a;
-    color: #39b54a;
-    transition: transform 1s;
-}
-article:hover i{
-    transform: rotate(-90deg);
-}
-
-.image-productos {
+    border: white;
+    border-radius: 5px;
     width: 100%;
 }
-.precio-descuento{
-    display:flex;
-    align-items: center;
-    margin-bottom: 10px;
+.campo-form2 input {
+    margin: 0px 10px;
+}
+.campo-form2 label, .campo-form3 label, .campo-form4 label {
+    font-size: 15px;
+}
+.checkbox {
+    display: inline-block;
+    padding: 5px;
+}
+.campo-form4 input {
+    margin: 10px 0px;
+}
+.campo-form5 button {
+    width: 25%;
+    padding: 8px;
+    display: block;
+    border-radius: 5px;
+    margin: auto;
+    background-color: rgba(13, 13, 126, 0.726);
+    color: white;
 }
 
-.price{
-    font-size: 18px;
-    margin-right: 8px;
-}
 
-.discount {
-    font-size: 13px;
-    color: #39b54a;
-
-}
-
-article h4{
-    font-size: 14px;
-    opacity: 0;
-    /* font-weight: normal; */
-   /*  margin-top: 4px; */
-   transition: all 500ms ease;
-}
-
-article:hover h4 {
-    opacity: 100;
-}
 /* footer */
 
 footer {
@@ -170,15 +137,6 @@ footer {
 .item-footer p {
     font-size: 15px;
 }
-
-nav i{
-    transition: transform 0.5s;
-}
-nav i:hover {
-    transform: rotate(360deg);
-    color: #39b54a;
-}
-
 
 @media (min-width:768px) {
     .Logo {
@@ -209,60 +167,67 @@ nav i:hover {
     .hamburguer-button {
         display: none;
     }
-    
+
     /* main */
-    .secciones {
-        width: 90%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        
-        
-    }
-    article {
-        max-width: 48%;
-        /* margin: 0px 10px; */
+
+    .formulario {
+        max-width: 60%;
+        margin: auto;
     }
 
 }
 
 @media (min-width:1200px) {
-     .Logo {
-         width: 250px;
-    }    
-    
-    .top-header, .list-header {
-        max-width: 1100px;
-        margin: auto;
-        align-items: center;
+
+    /* header */
+
+    .Logo {
+        width: 250px;
+   }    
+   
+   .top-header, .list-header {
+       max-width: 1100px;
+       margin: auto;
+       align-items: center;
+   }
+   .search input {
+       font-size: 16px;
+   }
+   .copy-header {
+       max-width: none;
+       font-size: 18px;
+       /* font-weight: 400; */
+   }
+
+   .list-header {
+       margin-top: 30px;
+   }
+
+   .list-header li {
+       margin: 0 10px;
+   }
+   .list-header a {
+       font-size: 19px;
+   } 
+
+   .Banner {
+       width: 100%;
+   }
+
+   /* main */
+
+   .formulario {
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 40%;
+    background-color: rgba(128, 128, 128, 0.349);
+   }
+   .campo-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 18px;
     }
-    .search input {
-        font-size: 16px;
-    }
-    .copy-header {
-        max-width: none;
+    .campo-form2 label , .campo-form3 label, .campo-form4 label {
         font-size: 18px;
-        /* font-weight: 400; */
-    }
-
-    .list-header {
-        margin-top: 30px;
-    }
-
-    .list-header li {
-        margin: 0 10px;
-    }
-    .list-header a {
-        font-size: 19px;
-    } 
-
-    .Banner {
-        width: 100%;
-    }
-
-    /* main */
-
-    article {
-        max-width: 22%;
     }
 }
